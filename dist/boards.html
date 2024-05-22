@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Boards</title>
+  </head>
+  <body class="bg-slate-300">
+    <header class="m-4">
+      <a href="./index.html">
+        <div class="w-16"><img src="../Trello_logo.png" alt="" /></div>
+      </a>
+    </header>
+    <section class="ml-64 p-6 mt-10">
+      <h3 class="font-bold text-xl">Boards</h3>
+      <div
+        id="list-container"
+        class="min-w-min max-h-max border-box mt-16 flex flex-row gap-5 overflow-y-hidden"
+      >
+        <div id="adding-list-container" class="w-64 h-fit p-2 rounded-lg bg-slate-400 mr-4">
+          <button id="create-button" class="w-60 h-fit rounded-lg text-white p-2 bg-slate-400">Add another list</button>
+          <form action="" class="hidden" id="create-list">
+            <input type="text" placeholder="Enter list title" id="list-name" class="w-60 h-12 rounded-lg mb-2 outline-blue-500 p-2">
+            <div class="flex gap-3">
+              <button type="submit" id="create" class="p-2 bg-blue-300 rounded-lg">Create</button>
+              <button id = "close" class="p-2 bg-blue-300 rounded-lg">X</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <script type = "module" src="./boardDom.js"></script>
+  </body>
+</html>
